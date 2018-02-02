@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script>
+			function accumulator(){
+					var a = 1;
+				this.read = function(){
+					this.b = +prompt("a?", 0);
+					this.c = +prompt("b?", 0);
+					a = this.c + this.b + a;
+				};
+				this.sum = function(){
+					return a;
+				}
+			}
+			var accumulator = new accumulator();
+			accumulator.read();
+			accumulator.read();
+			alert(accumulator.sum());
+		</script>
+	</head>
+</html>
